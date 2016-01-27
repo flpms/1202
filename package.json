@@ -1,0 +1,24 @@
+{
+  "name": "1202",
+  "version": "1.0.0",
+  "description": "Landing Page for Local 1202",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/flpms/1202.git"
+  },
+  "author": "Filipe M. Silva",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/flpms/1202/issues"
+  },
+  "homepage": "https://github.com/flpms/1202#readme",
+  "devDependencies": {
+    "connect": "^3.4.1",
+    "serve-static": "^1.10.2"
+  }
+}
