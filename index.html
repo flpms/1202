@@ -115,11 +115,20 @@
                         com ofertas únicas e especiais no dia do lançamento</p>
                 </article>
 
-                <form>
+                <form id="js-register-form">
                     <label>E-mail: </label>
-                    <input type="e-mail" placeholder="seuemail@provedor.com"/>
-                    <button class="btn btn-default">Enviar</button>
+                    <input type="e-mail" id="email" placeholder="seuemail@provedor.com"/>
+                    <button class="btn btn-default" id="send" type="button">Enviar</button>
                 </form>
+
+                <div class="sucess-alert text-center hide">
+                    <p>Obrigado por nos informar seu e-mail. <br />
+                        Te aguardamos em breve!</p>
+                </div>
+
+                <div class="js-alert-area text-center hide">
+                    E-mail inválido
+                </div>
             </div>
 
             <article class="col-md-offset-1 col-md-4 manifest text-justify">
@@ -139,6 +148,7 @@
 
         <script src="https://use.typekit.net/voe4wlq.js"></script>
         <script>try{Typekit.load({ async: true });}catch(e){console.error(e)}</script>
+        <script src="assets/js/index.js"></script>
         <!--
          Attributions
             www.pageinteractive.pl
