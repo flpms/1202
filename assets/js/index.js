@@ -51,7 +51,7 @@ window.onload = function() {
         var request = new XMLHttpRequest();
         request.open('POST', 'http://159.203.77.18:8080/api/users/   ', true);
         request.setRequestHeader('Content-Type', 'text/plain; charset=UTF-8');
-        request.send(JSON.stringify({"email":email}));
+        request.send(JSON.stringify({"email":email.value}));
         request.addEventListener("load", function(evt) {
 
             if (request.status === 200) {
