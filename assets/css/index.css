@@ -5,10 +5,8 @@
     padding: 0;
     margin: 0;
 }
-
 .first, .second { background-size: 110%; min-height: 600px; height: 100vh; }
 .first.cover{ background: url('../images/b.jpg') fixed no-repeat; }
-
 .first .title {
     color: #D6D6D8;
     font-family: "museo";
@@ -17,7 +15,6 @@
     text-shadow: 2px -2px 0 #5A4237;
     letter-spacing: -0.618rem;
 }
-
 .first .subtitle { color: #D7C249; margin: 21px auto 0 58px; text-shadow: 2px -2px 0 #5A4237; }
 .know-more {
     bottom: 60px;
@@ -29,7 +26,6 @@
     position: absolute;
     width: auto;
 }
-
 .first .know-more a {
     background: rgba(255, 255, 255, .2);
     border: 1px solid #C00337;
@@ -37,21 +33,18 @@
     color: #C00337;
     padding: 5px;
 }
-
 .second { background: #D6D6D8; padding: 80px 0;}
 .second article h3 { color: #C00337; font-size: 5rem; margin: 0 auto 40px 0; }
 .second article h4 { color: #C00337; font-size: 3rem; margin: 0 auto 40px 0; }
 .second p { font: normal 2.1rem/3.6rem "lato" sans-serif; }
 .second .disclaimer-bad { color: #591004; }
 .second a { color: #000; text-shadow: 0 1px 0 #FFF; }
-
 .second article.partial {
     background: #FFF;
     height: 400px;
     margin: 30px 0 20px 0;
     padding: 60px 0 0 0;
 }
-
 .second .help-button {
     background: rgba(90, 66, 55, 0.1);
     border: 1px solid #5A4237;
@@ -61,32 +54,22 @@
     padding: 10px;
     width: 250px;
 }
-
 .second .help-button:hover {
     transition: color 2s, background-color 2s;
     background: rgba(90, 66, 55, 0.8);
     color: #FFF;
     text-decoration: none;
 }
-
 .third h1, h2, h3, h4, h5, p, ul li { font-family:  "lato", sans-serif;}
-
-.third .line {
-    display: block;
-    min-height: 180px;
-    height: 30vh;
-}
-
+.third .line { display: block; min-height: 180px; height: 30vh; }
 .third .explain,
 .third .final-explain,
 .fourth .manifest,
 .fourth .form p { font-size: 1.8rem; line-height: 3.2rem;}
-
 .third .monitor p { font-size: 1.618rem; }
 .third .features { margin-top: 20px; }
 .third .features li { font-size: 1.6rem; list-style-type: none; }
 .third .features li::before { content: '-'; margin-right: 15px; }
-
 .fourth {
     background: url('../images/g.jpg') fixed no-repeat;
     background-size: cover;
@@ -94,14 +77,12 @@
     height: 100vh;
     min-height: 600px;
 }
-
 .fourth .manifest, .fourth .form {
     background: linear-gradient(to top, rgba(255, 255, 255, 0.8), #FFF);
     border-radius: 5px;
     padding: 50px;
     min-height: 400px;
 }
-
 .fourth .manifest p { margin: 30px 0; line-height: 2.8rem; text-shadow: 0 -1px 0 #D6D6D8; }
 .fourth .form p { margin: 20px; }
 .fourth .form form { display: block; margin: 30px 0; width: 100%; }
@@ -118,20 +99,23 @@
     padding: 0 10px 0  10px;
     width: 62%;
 }
-
 .fourth .form button {
     background: #C00337;
     border-radius: 5px;
     color: #FFF;
     height: 53px;
 }
-
+.fourth .sucess-alert {
+    border: 1px solid #5A4237;
+    border-radius: 5px;
+    width: 80%;
+    margin: 10px auto;
+}
 ::-webkit-input-placeholder { font-size: 2rem; text-align: center; }
 :-moz-placeholder { font-size: 2rem; text-align: center; }
 ::-moz-placeholder { font-size: 2rem; text-align: center; }
 :-ms-input-placeholder { font-size: 2rem; text-align: center; }
 :-input-placeholder  { font-size: 2rem; text-align: center; }
-
 .action-button {
     background-color: rgba(255, 255, 255, 0.5);
     border-radius: 5px;
@@ -143,17 +127,12 @@
     width: 62px;
     z-index: 500;
 }
-
 .action-button a { display: block; }
-
 .icon { background-size: contain !important; display: block; }
 .icon.store, .icon.form { height: 158px; width: 158px; }
-
 .icon.store { background: url('../images/store-broken-2.png') no-repeat; }
 .icon.form { background: url('../images/form.png') no-repeat;}
-
 .icon.devices { background: url('../images/devices.png') no-repeat; height: 220px; width: 220px; }
 .icon.graphos { background: url('../images/graphos.png') no-repeat; height: 138px; width: 138px; }
-
 .icon.house { background: url('../images/house.svg') no-repeat; height: 42px; width: 42px; }
 .icon.pencil { background: url('../images/pencil.svg') no-repeat; height: 42px; width: 42px; }
