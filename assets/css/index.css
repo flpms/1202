@@ -6,7 +6,7 @@
     margin: 0;
 }
 .first, .second { background-size: 110%; min-height: 600px; height: 100vh; }
-.first.cover{ background: url('../images/b.jpg') fixed no-repeat; }
+.first.cover{ background: url('../images/b.jpg') fixed no-repeat; background-size: cover; }
 .first .title {
     color: #D6D6D8;
     font-family: "museo";
@@ -33,13 +33,13 @@
     color: #C00337;
     padding: 5px;
 }
-.second { background: #D6D6D8; padding: 80px 0;}
+.second { background: #D6D6D8; padding: 80px 0 0 0;}
 .second article h3 { color: #C00337; font-size: 5rem; margin: 0 auto 40px 0; }
 .second article h4 { color: #C00337; font-size: 3rem; margin: 0 auto 40px 0; }
-.second p { font: normal 2.1rem/3.6rem "lato" sans-serif; }
+.second p { font: normal 2.1rem/3.6rem "lato", sans-serif; }
 .second .disclaimer-bad { color: #591004; }
 .second a { color: #000; text-shadow: 0 1px 0 #FFF; }
-.second article.partial {
+.second .partial {
     background: #FFF;
     height: 400px;
     margin: 30px 0 20px 0;
@@ -71,7 +71,7 @@
 .third .features li { font-size: 1.6rem; list-style-type: none; }
 .third .features li::before { content: '-'; margin-right: 15px; }
 .fourth {
-    background: url('../images/g.jpg') fixed no-repeat;
+    background: url('../images/g.jpg') fixed center no-repeat;
     background-size: cover;
     padding: 100px 0;
     height: 100vh;
@@ -136,3 +136,120 @@
 .icon.graphos { background: url('../images/graphos.png') no-repeat; height: 138px; width: 138px; }
 .icon.house { background: url('../images/house.svg') no-repeat; height: 42px; width: 42px; }
 .icon.pencil { background: url('../images/pencil.svg') no-repeat; height: 42px; width: 42px; }
+
+/* Responsiveness */
+
+/*mobile*/
+
+@media (max-device-width: 480px) {
+
+    .first .title { text-shadow: 2px -2px 0px #5A4237; }
+    .first .subtitle { font-size: 21px; line-height: 31px; }
+    .second {min-height: 640px; height: auto;}
+    .third {padding: 20px 0;}
+    .fourth { height: auto; }
+    .action-button {
+        bottom: 100px;
+        padding: 5px;
+        right: 10px;
+        width: 42px;
+    }
+
+    ::-webkit-input-placeholder { font-size: 1.4rem; }
+    :-moz-placeholder { font-size: 1.4rem; }
+    ::-moz-placeholder { font-size: 1.4rem; }
+    :-ms-input-placeholder { font-size: 1.4rem; }
+    :-input-placeholder  { font-size: 1.4rem; }
+}
+
+@media (min-device-width: 320px) and (max-device-width: 480px) and (orientation: landscape) {
+
+    .first { min-height: 320px; }
+    .first.cover{ background-size: 180%; background-position: 35% 0; }
+    .first .title { font-size: 5.6rem; margin: 13% auto 0% 13px; letter-spacing: -0.2rem; }
+    .first .subtitle {
+        font-size: 21px;
+        line-height: 31px;
+        margin: 13px auto 0 40px;
+        width: 45%;
+    }
+
+    .know-more {
+        bottom: 20px;
+        color: #FFF;
+        font-size: 13px;
+        left: 50%;
+        margin-left: -50px;
+        text-align: center;
+        position: absolute;
+        width: auto;
+    }
+
+    .second {min-height: 640px; height: auto;}
+    .second { padding: 40px 0 0 0;}
+    .second article h3 { font-size: 2.5rem; margin: 0 auto 0 auto; }
+    .second article h4 { font-size: 2.0rem; margin: 0 auto 21px auto; }
+    .second p { font: normal 1.618rem/2.336rem "lato", sans-serif; }
+    .second .partial { margin: 20px 0 0 0; padding: 20px 0 0 0}
+
+    .third {padding: 20px 0;}
+    .third h1 {font: normal 2.618rem/3.336rem "lato", sans-serif; }
+    .third h2 {font: normal 2.2rem/2.818rem "lato", sans-serif; }
+
+    .third .explain,
+    .third .final-explain,
+    .fourth .manifest, .fourth .form p { font-size: 1.618rem; line-height: 2.336rem }
+
+    .third .line { height: auto; }
+
+    .fourth { height: auto; }
+    .fourth .form label { width: 100%; text-align: center; }
+    .fourth .form button { width: 37%}
+    .fourth .form input { width: 61.8%}
+
+    .icon {margin: 0 auto; }
+    .icon.devices, .icon.store { height: 180px; }
+    .icon.house, .icon.pencil { height: 32px; width: 32px; }
+
+    .action-button { height: 74px; }
+
+    .fourth .manifest, .fourth .form {
+        background: rgba(255, 255, 255, 0.8);
+        min-height: 320px;
+        margin-top: 40px;
+        padding: 20px 25px;
+    }
+}
+
+@media (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
+    .first.cover{ background-size: 280%; background-position: 35% 0; }
+    .first .title { font-size: 5rem; margin: 65% auto 0% 13px; letter-spacing: 0rem; }
+    .first .subtitle { margin: 34px auto 0 35px; }
+    .second article h3 { font-size: 3rem; margin: 0 auto 0 auto; }
+    .second article h4 { font-size: 2.1rem; margin: 0 auto 21px auto; }
+    .second .partial { margin: 30px 0 0 0; height: 560px}
+    .second p { font: normal 1.7rem/2.6rem "lato", sans-serif; }
+
+    .third h1 {font: normal 2.829rem/3.3rem "lato", sans-serif; text-align: center; }
+    .third h2 {font: normal 2.2rem/3.3rem "lato", sans-serif; }
+
+    .third .explain,
+    .third .final-explain,
+    .fourth .form p,
+    .fourth .manifest { font-size: 1.518rem; line-height: 2.1rem;}
+
+    .fourth .form p { margin: 20px 0; }
+    .third .line{ height: auto;}
+    .fourth .form label,  .fourth .form button, .fourth .form input { margin: 5px auto; width: 100% }
+    .fourth .form label { text-align: center; }
+
+    .fourth .manifest, .fourth .form { background: rgba(255, 255, 255, 0.8); padding: 20px 25px; margin-top: 30px;}
+
+    .action-button { height: 84px; }
+
+    .icon.form {margin: 0 auto;}
+    .icon.graphos { margin: 0 auto;}
+    .icon.store { height: 178px; width: 178px; margin: 0 auto; }
+    .icon.house { background: url('../images/house.svg') no-repeat; height: 32px; width: 32px; }
+    .icon.pencil { background: url('../images/pencil.svg') no-repeat; height: 32px; margin-top: 5px; width: 32px; }
+}
