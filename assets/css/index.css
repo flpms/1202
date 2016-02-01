@@ -146,6 +146,11 @@
 /*tablets*/
 @media (max-width: 1024px) {
 
+    .first.cover { background-size: 100%;}
+
+    .first .title { margin: 21% auto 0% 20px; font-size: 10rem;}
+    .first .subtitle { margin: 34px auto 0 13px; }
+
     .third .explain,
     .third .final-explain { font-size: 1.9rem; line-height: 2.5rem;}
 
