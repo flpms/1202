@@ -201,7 +201,7 @@
     .icon.graphos { margin-top:20px; }
 }
 /*mobile*/
-@media (max-device-width: 480px) {
+@media (max-width: 480px) {
 
     .first .title { text-shadow: 2px -2px 0px #5A4237; }
     .first .subtitle { font-size: 21px; line-height: 31px; }
@@ -222,7 +222,7 @@
     :-input-placeholder  { font-size: 1.4rem; }
 }
 
-@media (min-device-width: 320px) and (max-device-width: 480px) and (orientation: landscape) {
+@media (min-width: 320px) and (max-width: 480px) and (orientation: landscape) {
 
     .first { min-height: 320px; }
     .first.cover{ background-size: 180%; background-position: 35% 0; }
@@ -281,10 +281,10 @@
     }
 }
 
-@media (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
+@media (min-width: 320px) and (max-width: 480px) and (orientation: portrait) {
     .first.cover{ background-size: 280%; background-position: 35% 0; }
-    .first .title { font-size: 5rem; margin: 65% auto 0% 13px; letter-spacing: 0rem; }
-    .first .subtitle { margin: 34px auto 0 35px; }
+    .first .title { font-size: 4.2rem; margin: 65% auto 0% 13px; letter-spacing: 0rem; }
+    .first .subtitle { margin: 5px auto 0 21px; width: 220px; }
     .second article h3 { font-size: 2.9rem; margin: 0 auto 0 auto; }
     .second article h4 { font-size: 2.1rem; margin: 0 auto 21px auto; }
     .second .partial { margin: 30px 0 0 0;}
@@ -292,6 +292,8 @@
 
     .third h1 {font: normal 2.829rem/3.3rem "lato", sans-serif; text-align: center; }
     .third h2 {font: normal 2.2rem/3.3rem "lato", sans-serif; }
+
+    .third .features li { font-size: 1.618rem; list-style-type: none; }
 
     .third .explain,
     .third .final-explain,
