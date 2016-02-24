@@ -85,7 +85,7 @@
     margin: 30px 0 0 0;
     padding: 60px 0 20px 0;
 }
-.second .help-button {
+.second .help-button, .third .help-button {
     background: rgba(90, 66, 55, 0.1);
     border: 1px solid #5A4237;
     border-radius: 5px;
@@ -94,7 +94,7 @@
     padding: 10px;
     width: 250px;
 }
-.second .help-button:hover {
+.second .help-button:hover, .third .help-button:hover {
     transition: color 2s, background-color 2s;
     background: rgba(90, 66, 55, 0.8);
     color: #FFF;
